@@ -12,7 +12,6 @@ export const getTimerData = async () => {
 };
 
 export const saveTimerData = async (data) => {
-	console.log('async timer data', data);
 	try {
 		await AsyncStorage.setItem(timerDataKey, JSON.stringify(data));
 	} catch (error) {
