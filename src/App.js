@@ -43,7 +43,6 @@ const App = () => {
 	}, []);
 
 	const onTimerChange = async ({ time, cb }) => {
-		console.log('onTimerChange', time);
 		// If app is killed and service is running the change the service button text.
 		!hasStarted && changeServiceStatus(true);
 		if (time == 36) {
